@@ -48,14 +48,5 @@ struct CustomGridView_Previews: PreviewProvider {
         CustomGridView(items: [1, 2, 3], columns: 2) { itemsSize, item in
             Text("\(item)")
         }
-//        CustomGridView(delegate: self as! SizeDelegate, items: [1, 2, 3], columns: 2) { itemSize, item in
-//            Text("\(item)")
-//                .frame(width: itemSize, height: itemSize)
-//        }
-
-//        CustomGridView(items: [1, 2, 3, 4, 5, 6, 7], columns: 3) {itemSize, item in
-//            Text("\(item)")
-//
-//        }
     }
 }
