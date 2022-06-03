@@ -11,7 +11,7 @@ struct CustomGridView<Content: View, T>: View {
     let items: [T]
     let columns: Int
     let content: (CGFloat, T) -> Content
-    var rows: Int {
+    private var rows: Int {
         items.count / columns
     }
     
