@@ -24,8 +24,8 @@ struct CustomGridView<Content: View, T>: View {
                         HStack {
                             ForEach(0 ..< columns, id: \.self) { columnIndex in
                                 if let index = getIndexFor(row: rowIndex, column: columnIndex) {
-                                    let cellSize = geometry.size.width / CGFloat(columns)
-                                    content(cellSize, items[index])
+                                    let size = geometry.size.width / CGFloat(columns)
+                                    content(size, items[index])
                                 } else {
                                     Spacer()
                                 }
